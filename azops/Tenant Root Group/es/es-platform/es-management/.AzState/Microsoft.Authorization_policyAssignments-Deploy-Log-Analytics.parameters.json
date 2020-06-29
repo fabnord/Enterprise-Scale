@@ -1,0 +1,51 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "SystemAssigned",
+          "principalId": "ccd17854-f452-4b95-a472-d10f34feecd4",
+          "tenantId": "e1912ee1-9ab4-4043-a71f-8095b0570fc4"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-Log-Analytics",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/es-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "ResourceName": "Deploy-Log-Analytics",
+        "ResourceGroupName": null,
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "SubscriptionId": null,
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        },
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/es-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "Properties": {
+          "Scope": "/providers/Microsoft.Management/managementGroups/es-management",
+          "NotScopes": null,
+          "DisplayName": "Deploy-Log-Analytics",
+          "Description": "Deploy-Log-Analytics",
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+          "Parameters": {
+            "workspaceName": {
+              "value": "es-la-92f0e04d-b1e7-4715-9dc2-e3a0c8742b7f"
+            },
+            "automationAccountName": {
+              "value": "es-a-92f0e04d-b1e7-4715-9dc2-e3a0c8742b7f"
+            },
+            "workspaceRegion": {
+              "value": "eastus"
+            },
+            "automationRegion": {
+              "value": "eastus"
+            },
+            "rgName": {
+              "value": "es-mgmt"
+            }
+          }
+        }
+      }
+    }
+  }
+}
